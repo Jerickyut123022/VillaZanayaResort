@@ -1,0 +1,101 @@
+/*=============================
+  Contact Hero Section
+=============================*/
+#contact_hero_section {
+    width: 100%;
+    min-height: 400px;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+                url('../img/resort-background.jpg'); /* Change image path */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact_hero_section .banner_cnt {
+    text-align: center;
+    margin-top: 100px;
+}
+
+#contact_hero_section .banner_cnt h2 {
+    color: #fff;
+    font-size: 42px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: rgba(255, 255, 255, 0.2);
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 8px;
+}
+
+/*=============================
+  Contact & Map Section
+=============================*/
+#contact_map_section {
+    padding: 60px 0;
+    background: #f8f9fa;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+/* Contact Information (Left) */
+.contact-info {
+    width: 48%; /* Adjust width to make it side by side */
+    text-align: left;
+}
+
+.contact-info h2 {
+    font-size: 22px;
+    color: #004d40;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Google Map (Right) */
+.map-container {
+    width: 48%; /* Adjust width to make it side by side */
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 450px;
+    border-radius: 10px;
+}
+
+/*=============================
+  Responsive Design (Stack on Mobile)
+=============================*/
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column; /* Stack on smaller screens */
+        text-align: center;
+    }
+
+    .contact-info, .map-container {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .map-container iframe {
+        height: 350px;
+    }
+}

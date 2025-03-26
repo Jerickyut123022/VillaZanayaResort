@@ -1,0 +1,28 @@
+/* Divider Styling */
+.divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin: 40px 0;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    flex: 1;
+    height: 2px;
+    background-color: #ccc; /* Line Color */
+    margin: 0 10px; /* Space around the text */
+}
+
+.divider span {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #333;
+    background: #fff; /* Match this with your background color */
+    padding: 0 15px;
+}

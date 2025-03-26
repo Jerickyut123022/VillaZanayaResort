@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Villa Zanaya</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="./css/contact.css">
+  <link rel="stylesheet" href="./css/reservation.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="content flex_space">
+          <div class="logo">
+            <img src="images/macy.png" alt="">
+          </div>
+          <span class="logo-text">Villa Zanaya Resort</span>
+    
+          <div class="navlinks">
+            <ul id="menulist">
+              <li><a href="index.html">Home</a> </li>
+              <li><a href="reservation.html">Reservation</a> </li>
+              <li><a href="#rooms">Rooms</a> </li>
+              <li><a href="contact.html">Contact</a> </li>
+              <li><button class="primary-btn" onclick="scrollToReservation()">BOOK NOW</button></li>
+ 
+            
+            </ul>
+           
+          </div>
+        </div>
+      </header>
+
+    <script>
+        var menulist = document.getElementById('menulist');
+        menulist.style.maxHeight = "0px";
+
+        function menutoggle() {
+          if (menulist.style.maxHeight == "0px") {
+            menulist.style.maxHeight = "100vh";
+          } else {
+            menulist.style.maxHeight = "0px";
+          }
+        }
+
+        function scrollToReservation() {
+            const reservationSection = document.getElementById("reservation");
+            if (reservationSection) {
+                reservationSection.scrollIntoView({ behavior: "smooth" });
+            } else {
+                window.location.href = "reservation.html"; // Redirect if not on the reservation page
+            }
+        }
+    </script>
+
+    <!-- Contact Hero Section -->
+    <section id="contact_hero_section" class="Chambres fix-margin">
+        <div class="container zindex">
+            <div class="col-lg-12 banner_cnt text-center">
+                <h2>Contact Us</h2>
+            </div>
+        </div>
+    </section>
+
+   <!-- Contact & Map Section -->
+<section id="contact_map_section">
+    <div class="container">
+        <div class="row">
+            <!-- Contact Information (Left) -->
+            <div class="col-lg-6 contact-info">
+                <h2>THE VILLA ZANAYA RESORT</h2>
+                <p>N184 Purok 2 Noble Namuco Rosario 4225 Batangas City, Philippines</p>
+                <p>Phone: +123456789</p>
+                <p>Email: VillaZanayaResort@gmail.com</p>
+
+                <h2>RESERVATION</h2>
+                <p>Jayson Sinlao</p>
+                <p>Jherlyn Dancel</p>
+                <p>Phone: +1-800-123-45-67</p>
+                <p>Email: reservations@villaresort.com</p>
+            </div>
+
+            <!-- Google Map (Right) -->
+            <div class="col-lg-6 map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9874.84988429534!2d121.1800969!3d13.8330441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTPCsDQ5JzU4LjkiTiAxMjHCsDEwJzQ4LjQiRQ!5e0!3m2!1sen!2sph!4v1711298567890"
+                    width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="">
+                </iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <script src="https://kit.fontawesome.com/f0ce275083.js"></script>
+
+<!-- ----footer Section start here -->
+<section id="footer-site">
+    <div class="footer-top">
+        <div class="footer-top-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 mt-1 text-center">
+                        <h2>SOCIAL MEDIA</h2>
+                        <h6>FOLLOW THE VILLA ZANAYA RESORT</h6>
+                        <div class="footer-s-icons text-center">
+                            <ul>
+                                <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+                                <li><a href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="wrapper">
+            <!-- Updated Logo Section -->
+            <div class="footer-LOGO">
+                <div class="macy-box">
+                    <img src="images/macy.png" alt="">
+                    <span class="zanaya-text">Villa Zanaya Resort</span>
+                </div>
+            </div>
+
+          
+
+            <div class="footer-contact">
+                <ul>
+                    <li><i class="fa fa-map-marker"></i> N184 Purok 2 Noble Namuco Rosario, Batangas City, Philippines</li>
+                    <li><i class="fa fa-phone"></i> +1-800-123-45-67</li>
+                    <li><a href="mailto:info@monparadis.com"><i class="fa fa-paper-plane"></i> Villazanayaresort@gmail.com</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-nav">
+                <ul>
+                    <li><a href="#">SITEMAP</a></li>
+                    <li><a href="#">PRIVACY POLICY</a></li>
+                    <li><a href="#">TERMS OF USE</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ----footer Section end here -->
+
+<script src="https://kit.fontawesome.com/f0ce275083.js"></script>
+
+</html>

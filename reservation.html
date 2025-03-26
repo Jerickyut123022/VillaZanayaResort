@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservation - Villa Zanaya Hotel</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="./css/divider.css">
+  <link rel="stylesheet" href="./css/reservation.css">
+  <link rel="stylesheet" href="./css/home.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+  <header>
+    <div class="content flex_space">
+      <div class="logo">
+        <img src="images/macy.png" alt="">
+      </div>
+      <span class="logo-text">Villa Zanaya Resort</span>
+
+      <div class="navlinks">
+        <ul id="menulist">
+          <li><a href="index.html">Home</a> </li>
+          <li><a href="reservation.html">Reservation</a> </li>
+          <li><a href="#rooms">Rooms</a> </li>
+          <li><a href="contact.html">Contact</a> </li>
+          <li> 
+            <a href="#book-now-divider">
+                <button class="primary-btn">BOOK NOW</button>
+            </a>
+        </li>
+        
+        </li>
+        
+        </ul>
+       
+      </div>
+    </div>
+  </header>
+
+
+  <script>
+    var menulist = document.getElementById('menulist');
+    menulist.style.maxHeight = "0px";
+
+    function menutoggle() {
+      if (menulist.style.maxHeight == "0px") {
+        menulist.style.maxHeight = "100vh";
+      } else {
+        menulist.style.maxHeight = "0px";
+      }
+    }
+  </script>
+
+
+
+
+  <!-- Resort Rates Section -->
+  <section id="rates-section">
+    <div class="container">
+      <h2>Villa Zanaya Resort Rates</h2>
+      <p><strong>100.00 PESOS</strong> for Adults</p>
+      <p><strong>80.00 PESOS</strong> for Kids</p>
+      <p><strong>Free</strong> for kids 3ft and below</p>
+
+      <h3>Additional Services:</h3>
+      <ul>
+        <li>Extra Mattress - <strong>350.00 PESOS</strong></li>
+        <li>Gas - <strong>500.00 to 1,000.00 PESOS</strong></li>
+        <li>Videoke - <strong>800.00 PESOS</strong></li>
+        <li>Billiards - <strong>100.00 PESOS per hour</strong></li>
+        <li>Kubo - <strong>600.00 PESOS</strong> (Good for 9 pax, 10 hours)</li>
+      </ul>
+
+      <h3>Pavilion Rates:</h3>
+      <ul>
+        <li>Pavilion Only - <strong>3,500.00 PESOS (Daytime)</strong></li>
+        <li>Pavilion Only - <strong>4,500.00 PESOS (Overnight, with lights, chairs, and tables)</strong></li>
+        <li>Good for 20 pax. Exceeding 20 pax will incur an additional <strong>100.00 PESOS</strong> per head.</li>
+      </ul>
+
+      <h3>Room and Pavilion Packages:</h3>
+      <ul>
+        <li><strong>3 Rooms (including Pavilion)</strong> - Good for 20 pax (Rooms 1, 2, and 4)</li>
+        <li>10 hours - <strong>7,000.00 PESOS</strong></li>
+        <li>22 hours - <strong>11,000.00 PESOS</strong></li>
+        <li><strong>4 Rooms (including Pavilion)</strong> - Good for 25 pax (Ground Floor Rooms)</li>
+        <li>10 hours - <strong>8,000.00 PESOS</strong></li>
+        <li>22 hours - <strong>12,000.00 PESOS</strong></li>
+      </ul>
+
+      <h3>For Events:</h3>
+      <ul>
+        <li><strong>6 Rooms (including Pavilion and Kubo)</strong> - Good for 40 pax (Whole Resort)</li>
+        <li>Exceeding 20 pax will incur an additional <strong>100.00 PESOS</strong> per head</li>
+        <li>10 hours - <strong>10,000.00 PESOS</strong></li>
+        <li>22 hours - <strong>15,000.00 PESOS</strong></li>
+      </ul>
+
+      <p><strong>For 70-100 pax</strong>, kindly send us a private message for a discount.</p>
+    </div>
+  </section>
+  
+ <!-- Divider -->
+<div class="divider" id="book-now-divider">
+    <span>BOOK NOW</span>
+</div>
+
+
+   <!-- Reservation Section -->
+   <section id="reservation">
+    <div class="container">
+        <div class="form-body">
+            <div class="heading-text">
+                <h5 class="form-heading">BOOKING FORM</h5>
+                <h2 class="form-caption">Personal Info</h2>
+                <p class="form-title">Fill in your details and book your dream vacation now!</p>
+            </div>
+
+            <form id="booking-form">
+                <!-- Personal Info -->
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" placeholder="Enter your full name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" placeholder="Enter your phone number" required>
+                </div>
+
+                <!-- Booking Details -->
+                <div class="form-group">
+                    <label for="checkin">Check-in Date:</label>
+                    <input type="date" id="checkin" required>
+                </div>
+                <div class="form-group">
+                    <label for="checkout">Check-out Date:</label>
+                    <input type="date" id="checkout" required>
+                </div>
+
+                <!-- Number of Guests -->
+                <div class="form-group">
+                    <label for="adults">Number of Adults:</label>
+                    <select id="adults">
+                        <option value="1">1 Adult</option>
+                        <option value="2">2 Adults</option>
+                        <option value="3">3 Adults</option>
+                        <option value="4">4 Adults</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="children">Number of Children:</label>
+                    <select id="children">
+                        <option value="0">0 Children</option>
+                        <option value="1">1 Child</option>
+                        <option value="2">2 Children</option>
+                        <option value="3">3 Children</option>
+                        <option value="4">4 Children</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="primary-btn">Next</button>
+            </form>
+        </div>
+
+        <!-- Book Details Section -->
+        <div class="book-sidebar">
+            <h5>Book Details</h5>
+            <h1>Selected Room</h1>
+            <hr>
+            
+            <!-- Personal Information -->
+            <h3>Personal Information</h3>
+            <ul class="detail-list">
+                <li><label>NAME:</label> <p id="name-display">____________</p></li>
+                <li><label>EMAIL:</label> <p id="email-display">____________</p></li>
+                <li><label>PHONE:</label> <p id="phone-display">____________</p></li>
+            </ul>
+
+            <hr>
+            
+            <!-- Booking Information -->
+            <h3>Booking Details</h3>
+            <ul class="detail-list">
+                <li><label>CHECK IN:</label> <p id="checkin-display">____/____/____</p></li>
+                <li><label>CHECK OUT:</label> <p id="checkout-display">____/____/____</p></li>
+                <li><label>ADULTS:</label> <p id="adults-display">0</p></li>
+                <li><label>CHILDREN:</label> <p id="children-display">0</p></li>
+            </ul>
+
+            <hr>
+
+            <!-- Confirm Booking Button -->
+            <button id="confirm-booking" class="primary-btn">Confirm Booking</button>
+        </div>
+    </div>
+</section>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const bookingForm = document.getElementById("booking-form");
+
+        // Input fields
+        const nameInput = document.getElementById("name");
+        const emailInput = document.getElementById("email");
+        const phoneInput = document.getElementById("phone");
+        const checkinInput = document.getElementById("checkin");
+        const checkoutInput = document.getElementById("checkout");
+        const adultsInput = document.getElementById("adults");
+        const childrenInput = document.getElementById("children");
+
+        // Display fields
+        const nameDisplay = document.getElementById("name-display");
+        const emailDisplay = document.getElementById("email-display");
+        const phoneDisplay = document.getElementById("phone-display");
+        const checkinDisplay = document.getElementById("checkin-display");
+        const checkoutDisplay = document.getElementById("checkout-display");
+        const adultsDisplay = document.getElementById("adults-display");
+        const childrenDisplay = document.getElementById("children-display");
+
+        // Confirm Booking Button
+        const confirmBookingBtn = document.getElementById("confirm-booking");
+
+        // Listen for form submission (Next button)
+        bookingForm.addEventListener("submit", function (event) {
+            event.preventDefault(); // Prevent actual form submission
+
+            // Update the Book Details section
+            nameDisplay.textContent = nameInput.value || "____________";
+            emailDisplay.textContent = emailInput.value || "____________";
+            phoneDisplay.textContent = phoneInput.value || "____________";
+            checkinDisplay.textContent = checkinInput.value || "____/____/____";
+            checkoutDisplay.textContent = checkoutInput.value || "____/____/____";
+            adultsDisplay.textContent = adultsInput.value || "0";
+            childrenDisplay.textContent = childrenInput.value || "0";
+        });
+
+        // Confirm Booking Functionality
+        confirmBookingBtn.addEventListener("click", function () {
+            alert("Your booking has been confirmed! Thank you for choosing Villa Zanaya Resort.");
+        });
+    });
+</script><!-- ----footer Section start here -->
+<section id="footer-site">
+    <div class="footer-top">
+        <div class="footer-top-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 mt-1 text-center">
+                        <h2>SOCIAL MEDIA</h2>
+                        <h6>FOLLOW THE VILLA ZANAYA RESORT</h6>
+                        <div class="footer-s-icons text-center">
+                            <ul>
+                                <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+                                <li><a href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="wrapper">
+            <!-- Updated Logo Section -->
+            <div class="footer-LOGO">
+                <div class="macy-box">
+                    <img src="images/macy.png" alt="">
+                    <span class="zanaya-text">Villa Zanaya Resort</span>
+                </div>
+            </div>
+
+          
+
+            <div class="footer-contact">
+                <ul>
+                    <li><i class="fa fa-map-marker"></i> N184 Purok 2 Noble Namuco Rosario, Batangas City, Philippines</li>
+                    <li><i class="fa fa-phone"></i> +1-800-123-45-67</li>
+                    <li><a href="mailto:info@monparadis.com"><i class="fa fa-paper-plane"></i> Villazanayaresort@gmail.com</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-nav">
+                <ul>
+                    <li><a href="#">SITEMAP</a></li>
+                    <li><a href="#">PRIVACY POLICY</a></li>
+                    <li><a href="#">TERMS OF USE</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ----footer Section end here -->
+
+<script src="https://kit.fontawesome.com/f0ce275083.js"></script>
+
+</body>
+</html>

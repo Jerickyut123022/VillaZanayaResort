@@ -1,0 +1,184 @@
+/*================================================
+- Footer SECTION CSS
+==================================================*/
+
+#footer-site {
+    background-color: #24324a;
+    color: #fff;
+}
+
+#footer-site .footer-top {
+    position: relative;
+    padding: 50px 0px 50px 0px;
+    background-color: #344157;
+}
+
+/* Removed the middle vertical line */
+#footer-site .footer-top:before {
+    display: none; /* This removes the cut line */
+}
+
+.footer-top .footer-top-body h5 {
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.footer-top .footer-top-body h6 {
+    font-size: 14px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.footer-s-icons {
+    margin-top: 20px;
+}
+
+.footer-s-icons ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-s-icons ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.footer-s-icons ul li a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    background-color: #5c677b;
+    border-radius: 50%;
+}
+
+.footer-s-icons ul li a:hover {
+    background-color: #1e7f35;
+}
+
+.footer-newsletter {
+    margin-top: 20px;
+}
+
+.footer-newsletter input[type="text"] {
+    width: 50%;
+    height: 40px;
+    line-height: 30px;
+    border: none;
+    color: #1e7f35;
+    padding: 15px 30px;
+    font-size: 15px;
+    background-color: #ffffff;
+    outline: none;
+    overflow: hidden;
+}
+
+.footer-newsletter button {
+    height: 40px;
+    margin-top: -10px;
+    border: none;
+    line-height: 30px;
+    text-align: center;
+    font-size: 13px;
+    padding: 7px 20px;
+    color: #fff;
+    background-color: #1e7f35;
+}
+
+/* Footer bottom */
+#footer-site .footer-bottom {
+    padding-top: 100px;
+    padding-bottom: 20px;
+    font-size: 11px;
+    color: #818a9c;
+    text-align: center;
+}
+
+#footer-site .footer-bottom .wrapper {
+    padding: 0px 60px 0px 60px;
+}
+
+#footer-site .footer-bottom .footer-LOGO {
+    display: flex;
+    justify-content: center; /* Center align logo and text */
+    align-items: center; /* Vertical center align */
+}
+
+#footer-site .footer-bottom .footer-LOGO h2 {
+    color: #1e7f35;
+    font-size: 40px;
+    font-weight: 600;
+    margin-left: 10px; /* Add space between logo and text */
+}
+
+#footer-site .footer-bottom .footer-LOGO img {
+    width: 50px; /* Adjust the logo size */
+    height: auto;
+}
+
+.zanaya-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* Copyright section */
+.footer-copyright {
+    padding-top: 20px;
+}
+
+.footer-copyright p {
+    text-align: center;
+    display: inline-block;
+}
+
+.footer-contact {
+    margin-top: 10px;
+}
+
+.footer-contact ul {
+    list-style-type: none;
+}
+
+.footer-contact ul li {
+    display: inline;
+    padding: 0px 10px;
+}
+
+.footer-contact ul li a {
+    text-decoration: none;
+    color: #818a9c;
+}
+
+.footer-contact ul li a:hover {
+    color: #ffffff;
+    transition: all 0.5s;
+}
+
+.footer-nav {
+    margin-top: 20px;
+}
+
+.footer-nav ul {
+    list-style-type: none;
+}
+
+.footer-nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.footer-nav ul li a {
+    color: #1e7f35;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 13px !important;
+}
+
+.footer-nav ul li a:hover {
+    color: #ffffff;
+    transition: all 0.3s;
+}

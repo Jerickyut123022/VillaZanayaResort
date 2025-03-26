@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Villa Zanaya Hotel</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/home.css">
+  <link rel="stylesheet" href="./css/reservation.css">
+ 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+  <header>
+    <div class="content flex_space">
+      <div class="logo">
+        <img src="images/macy.png" alt="">
+      </div>
+      <span class="logo-text">Villa Zanaya Resort</span>
+
+      <div class="navlinks">
+        <ul id="menulist">
+          <li><a href="index.html">Home</a> </li>
+          <li><a href="reservation.html">Reservation</a> </li>
+          <li><a href="#rooms">Rooms</a> </li>
+          <li><a href="contact.html">Contact</a> </li>
+         
+          <li><button class="primary-btn" onclick="scrollToReservation()">BOOK NOW</button></li>
+        </ul>
+       
+      </div>
+    </div>
+  </header>
+
+
+  <script>
+    var menulist = document.getElementById('menulist');
+    menulist.style.maxHeight = "0px";
+
+    function menutoggle() {
+      if (menulist.style.maxHeight == "0px") {
+        menulist.style.maxHeight = "100vh";
+      } else {
+        menulist.style.maxHeight = "0px";
+      }
+    }
+  </script>
+
+
+<section class="home">
+  <div class="content">
+      <div class="owl-carousel owl-theme">
+          <div class="item">
+              <img src="images/banner-1.png" alt="Banner 1">
+              <div class="text">
+                  <h1>Spend Your Holiday</h1>
+                  <p>Turn your dream vacation into a reality with an unforgettable experience.</p>
+                  <div class="flex">
+                     
+                  </div>
+              </div>
+          </div>
+          <div class="item">
+              <img src="images/banner-2.png" alt="Banner 2">
+              <div class="text">
+                  <h1>Explore New Destinations</h1>
+                  <p>Discover hidden gems and breathtaking views, all waiting to be explored.</p>
+                  <div class="flex">
+                      
+                  </div>
+              </div>
+          </div>
+          <div class="item">
+              <img src="images/banner-3.png" alt="Banner 3">
+              <div class="text">
+                  <h1>Relax & Enjoy</h1>
+                  <p>Every corner of our resort offers a peaceful retreat for your mind and body.</p>
+                  <div class="flex">
+                     
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<!-- jQuery (Required for Owl Carousel) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- Owl Carousel JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+<script>
+  $(document).ready(function(){
+      $('.owl-carousel').owlCarousel({
+          loop: true,              // Loop through slides infinitely
+          margin: 0,
+          nav: true,               // Enable navigation arrows
+          dots: false,             // Hide dots
+          autoplay: true,          // Enable auto-slide
+          autoplayTimeout: 7000,   // Change slide every 7 seconds (7000ms)
+          autoplayHoverPause: true,// Pause when hovered
+          navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
+          responsive: {
+              0: { items: 1 },
+              768: { items: 1 },
+              1000: { items: 1 }
+          }
+      });
+  });
+</script>
+
+<!-- Include Owl Carousel Scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+<script>
+  $(document).ready(function(){
+      $('.owl-carousel').owlCarousel({
+          loop: true,
+          margin: 0,
+          nav: true,
+          dots: false,
+          autoplay: true,
+          autoplayTimeout: 7000, // Switch every 7 seconds
+          autoplayHoverPause: true,
+          navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
+          responsive: {
+              0: { items: 1 },
+              768: { items: 1 },
+              1000: { items: 1 }
+          }
+      });
+  });
+</script>
+
+
+
+
+  <section class="about top">
+    <div class="container flex">
+      <div class="left">
+        <div class="heading">
+          <h1>WELCOME</h1>
+          <h2>Villa Zanaya Resort</h2>
+        </div>
+        <p>Welcome to Villa Zanaya Resort, where luxury meets tranquility! Nestled in the heart of nature, our resort is the perfect destination for those seeking relaxation, adventure, and high class amenities. Whether you're here for a peaceful getaway, a family retreat, or a corporate event, we provide an unforgettable experience with stunning night views, exceptional service, and unparalleled comfort. Let Villa Zanaya Resort be your home away from home. We look forward to making your stay extraordinary! ✨
+        </p>
+        <button class="primary-btn">ABOUT US</button>
+      </div>
+      <div class="right">
+        <img src="images/about.png" alt="">
+      </div>
+    </div>
+  </section>
+
+  <section class="counter top">
+    <!---- add something that can be a divider photos etc.-->
+  </section>
+
+
+  <section class="rooms">
+    <div class="container top">
+      <div class="heading">
+        <h1>EXPLORE</h1>
+        <h2>Rooms</h2>
+        <p>Experience the perfect blend of comfort and elegance in our thoughtfully designed rooms – your ideal retreat awaits.
+        </p>
+      </div>
+
+      <div class="content mtop">
+        <div class="owl-carousel owl-carousel1 owl-theme">
+          <div class="items">
+            <div class="image">
+              <img src="images/room-1.png" alt="">
+            </div>
+            <div class="text">
+              <h2>Suporior Rooms</h2>
+              <div class="rate flex">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <p>Lorem ipsum dolor sit amet constur adipisicing elit sed do eiusmtem por incid.
+              </p>
+              <div class="button flex">
+                <button class="primary-btn">BOOK NOW</button>
+                <h3>$250 <span> <br> Per Night </span> </h3>
+              </div>
+            </div>
+          </div>
+          <div class="items">
+            <div class="image">
+              <img src="images/room-2.png" alt="">
+            </div>
+            <div class="text">
+              <h2>Suporior Rooms</h2>
+              <div class="rate flex">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <p>Lorem ipsum dolor sit amet constur adipisicing elit sed do eiusmtem por incid.
+              </p>
+              <div class="button flex">
+                <button class="primary-btn">BOOK NOW</button>
+                <h3>$250 <span> <br> Per Night </span> </h3>
+              </div>
+            </div>
+          </div>
+          <div class="items">
+            <div class="image">
+              <img src="images/room-3.png" alt="">
+            </div>
+            <div class="text">
+              <h2>Suporior Rooms</h2>
+              <div class="rate flex">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <p>Lorem ipsum dolor sit amet constur adipisicing elit sed do eiusmtem por incid.
+              </p>
+              <div class="button flex">
+                <button class="primary-btn">BOOK NOW</button>
+                <h3>$250 <span> <br> Per Night </span> </h3>
+              </div>
+            </div>
+          </div>
+          <div class="items">
+            <div class="image">
+              <img src="images/room-4.png" alt="">
+            </div>
+            <div class="text">
+              <h2>Suporior Rooms</h2>
+              <div class="rate flex">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <p>Lorem ipsum dolor sit amet constur adipisicing elit sed do eiusmtem por incid.
+              </p>
+              <div class="button flex">
+                <button class="primary-btn">BOOK NOW</button>
+                <h3>$250 <span> <br> Per Night </span> </h3>
+              </div>
+            </div>
+          </div>
+          <div class="items">
+            <div class="image">
+              <img src="images/room-5.png" alt="">
+            </div>
+            <div class="text">
+              <h2>Suporior Rooms</h2>
+              <div class="rate flex">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <p>Lorem ipsum dolor sit amet constur adipisicing elit sed do eiusmtem por incid.
+              </p>
+              <div class="button flex">
+                <button class="primary-btn">BOOK NOW</button>
+                <h3>$250 <span> <br> Per Night </span> </h3>
+              </div>
+            </div>
+          </div>
+          <div class="items">
+            <div class="image">
+              <img src="images/room-6.png" alt="">
+            </div>
+            <div class="text">
+              <h2>Suporior Rooms</h2>
+              <div class="rate flex">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <p>Lorem ipsum dolor sit amet constur adipisicing elit sed do eiusmtem por incid.
+              </p>
+              <div class="button flex">
+                <button class="primary-btn">BOOK NOW</button>
+                <h3>$250 <span> <br> Per Night </span> </h3>
+              </div>
+            </div>
+          </div>
+          <div class="items">
+            <div class="image">
+              <img src="images/room-7.png" alt="">
+            </div>
+            <div class="text">
+              <h2>Suporior Rooms</h2>
+              <div class="rate flex">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <p>Lorem ipsum dolor sit amet constur adipisicing elit sed do eiusmtem por incid.
+              </p>
+              <div class="button flex">
+                <button class="primary-btn">BOOK NOW</button>
+                <h3>$250 <span> <br> Per Night </span> </h3>
+              </div>
+            </div>
+          </div>
+          <div class="items">
+            <div class="image">
+              <img src="images/room-8.png" alt="">
+            </div>
+            <div class="text">
+              <h2>Suporior Rooms</h2>
+              <div class="rate flex">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <p>Lorem ipsum dolor sit amet constur adipisicing elit sed do eiusmtem por incid.
+              </p>
+              <div class="button flex">
+                <button class="primary-btn">BOOK NOW</button>
+                <h3>$250 <span> <br> Per Night </span> </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+    $('.owl-carousel1').owlCarousel({
+      loop: true,
+      margin: 40,
+      nav: true,
+      dots: false,
+      navText: ["<i class = 'fa fa-chevron-left'></i>", "<i class = 'fa fa-chevron-right'></i>"],
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 2,
+          margin: 10,
+        },
+        1000: {
+          items: 3
+        }
+      }
+    })
+  </script>
+  
+
+
+  <section class="gallery">
+    <div class="container top">
+      <div class="heading">
+        <h1>PHOTOS</h1>
+        <h2> Gallery</h2>
+        <p>A glimpse into paradise – discover the beauty of Villa Zanaya Resort
+      </div>
+    </div>
+
+    <div class="content mtop">
+      <div class="owl-carousel owl-carousel1 owl-theme">
+        <div class="items">
+          <div class="img">
+            <img src="images/gallery-1.png" alt="">
+          </div>
+          <div class="overlay">
+            <span class="fa fa-plus"> </span>
+            <h3>Photo Title Here.</h3>
+          </div>
+        </div>
+        <div class="items">
+          <div class="img">
+            <img src="images/gallery-2.png" alt="">
+          </div>
+          <div class="overlay">
+            <span class="fa fa-plus"> </span>
+            <h3>Photo Title Here.</h3>
+          </div>
+        </div>
+        <div class="items">
+          <div class="img">
+            <img src="images/gallery-3.png" alt="">
+          </div>
+          <div class="overlay">
+            <span class="fa fa-plus"> </span>
+            <h3>Photo Title Here.</h3>
+          </div>
+        </div>
+        <div class="items">
+          <div class="img">
+            <img src="images/gallery-4.png" alt="">
+          </div>
+          <div class="overlay">
+            <span class="fa fa-plus"> </span>
+            <h3>Photo Title Here.</h3>
+          </div>
+        </div>
+        <div class="items">
+          <div class="img">
+            <img src="images/gallery-5.png" alt="">
+          </div>
+          <div class="overlay">
+            <span class="fa fa-plus"> </span>
+            <h3>Photo Title Here.</h3>
+          </div>
+        </div>
+        <div class="items">
+          <div class="img">
+            <img src="images/gallery-6.png" alt="">
+          </div>
+          <div class="overlay">
+            <span class="fa fa-plus"> </span>
+            <h3>Photo Title Here.</h3>
+          </div>
+        </div>
+        <div class="items">
+          <div class="img">
+            <img src="images/gallery-4.png" alt="">
+          </div>
+          <div class="overlay">
+            <span class="fa fa-plus"> </span>
+            <h3>Photo Title Here.</h3>
+          </div>
+        </div>
+        <div class="items">
+          <div class="img">
+            <img src="images/gallery-3.png" alt="">
+          </div>
+          <div class="overlay">
+            <span class="fa fa-plus"> </span>
+            <h3>Photo Title Here.</h3>
+          </div>
+        </div>
+        <div class="items">
+          <div class="img">
+            <img src="images/gallery-1.png" alt="">
+          </div>
+          <div class="overlay">
+            <span class="fa fa-plus"> </span>
+            <h3>Photo Title Here.</h3>
+          </div>
+        </div>
+        <div class="items">
+          <div class="img">
+            <img src="images/gallery-6.png" alt="">
+          </div>
+          <div class="overlay">
+            <span class="fa fa-plus"> </span>
+            <h3>Photo Title Here.</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <script>
+    $('.owl-carousel1').owlCarousel({
+      loop: true,
+      margin: 0,
+      nav: true,
+      dots: false,
+      autoplay: true,
+      autoplayTimeout: 1000,
+      autoplayHoverPause: true,
+      navText: ["<i class = 'fa fa-chevron-left'></i>", "<i class = 'fa fa-chevron-right'></i>"],
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 4,
+        },
+        1000: {
+          items: 6
+        }
+      }
+    })
+  </script>
+
+
+<section class="services top">
+  <div class="container">
+    <div class="heading">
+      <h1>SERVICES</h1>
+      <h2>Our Services</h2>
+      <p>Enhance your stay with our exclusive extra services for a more comfortable and enjoyable experience.</p>
+    </div>
+
+    <div class="content flex_space">
+      <div class="left grid2">
+        <div class="box">
+          <div class="text">
+            <i class="fa-solid fa-champagne-glasses"></i>
+            <h3>Extra Mattress</h3>
+            <p>350.00 PESOS</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="text">
+            <i class="fa-solid fa-person-biking"></i>
+            <h3>Gas</h3>
+            <p>500.00 to 1,000.00 PESOS</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="text">
+            <i class="fa-solid fa-utensils"></i>
+            <h3>Videoke</h3>
+            <p>800.00 PESOS</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="text">
+            <i class="fa-solid fa-spa"></i>
+            <h3>Billiards</h3>
+            <p>100.00 PESOS per hour</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="text">
+            <i class="fa-solid fa-home"></i>
+            <h3>Kubo</h3>
+            <p>600.00 PESOS (Good for 9 pax, 10 hours)</p>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <img src="images/service.png" alt="">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+ 
+
+
+
+ 
+
+
+ <!-- ----footer Section start here -->
+<section id="footer-site">
+  <div class="footer-top">
+      <div class="footer-top-body">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-6 mt-1 text-center">
+                      <h2>SOCIAL MEDIA</h2>
+                      <h6>FOLLOW THE VILLA ZANAYA RESORT</h6>
+                      <div class="footer-s-icons text-center">
+                          <ul>
+                              <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                              <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                              <li><a href="#" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+                              <li><a href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div class="footer-bottom">
+      <div class="wrapper">
+          <!-- Updated Logo Section -->
+          <div class="footer-LOGO">
+              <div class="macy-box">
+                  <img src="images/macy.png" alt="">
+                  <span class="zanaya-text">Villa Zanaya Resort</span>
+              </div>
+          </div>
+
+          <div class="footer-contact">
+              <ul>
+                  <li><i class="fa fa-map-marker"></i> N184 Purok 2 Noble Namuco Rosario, Batangas City, Philippines</li>
+                  <li><i class="fa fa-phone"></i> +1-800-123-45-67</li>
+                  <li><a href="mailto:info@monparadis.com"><i class="fa fa-paper-plane"></i> Villazanayaresort@gmail.com</a></li>
+              </ul>
+          </div>
+
+          <div class="footer-nav">
+              <ul>
+                  <li><a href="#">SITEMAP</a></li>
+                  <li><a href="#">PRIVACY POLICY</a></li>
+                  <li><a href="#">TERMS OF USE</a></li>
+              </ul>
+          </div>
+      </div>
+  </div>
+</section>
+
+<!-- ----footer Section end here -->
+
+<script src="https://kit.fontawesome.com/f0ce275083.js"></script>
+
+</body>
+
+</html>

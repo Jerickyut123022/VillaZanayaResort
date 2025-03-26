@@ -1,0 +1,124 @@
+/*----reservation----*/
+
+/* RESERVATION SECTION */
+#reservation {
+    background: linear-gradient(to right, #e0f7fa, #80deea);
+    padding: 100px 0;
+    text-align: center;
+    margin-top: 80px;
+  }
+  
+  #reservation .container {
+    width: 80%;
+    margin: auto;
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;  /* Make the reservation container use flexbox for side-by-side layout */
+    justify-content: space-between;  /* Ensures space between form and details */
+    align-items: flex-start;  /* Aligns elements to the top */
+    flex-wrap: wrap;  /* Ensures responsiveness */
+    gap: 20px;  /* Adds spacing */
+  }
+  
+  #reservation h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  #reservation p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  #reservation form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  #reservation .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  
+  #reservation form div {
+    text-align: left;
+  }
+  
+  #reservation form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+  }
+  
+  #reservation form input,
+  #reservation form select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  #reservation form input:focus,
+  #reservation form select:focus {
+    border-color: #00796b;
+    outline: none;
+  }
+  
+  #reservation form button {
+    background: #00796b;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+  }
+  
+  #reservation form button:hover {
+    background: #004d40;
+  }
+  
+  /* Style the form body */
+  .form-body {
+    flex: 1;  /* Takes available space */
+    max-width: 50%;  /* Ensures form doesn’t stretch too wide */
+  }
+  
+  /* Style the book details sidebar */
+  .book-sidebar {
+    flex: 1;  
+    max-width: 45%;  /* Keeps sidebar from being too wide */
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    #reservation .container {
+      width: 90%;
+      flex-direction: column; /* Stack form and sidebar vertically on small screens */
+    }
+  
+    #reservation .grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .form-body, .book-sidebar {
+      max-width: 100%; /* Allow full width for smaller screens */
+    }
+  }
+  
+  /*---end of reservation-----*/
